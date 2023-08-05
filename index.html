@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Neeraj Saini is software & web developer who likes problem solving and writing
+    clean code."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="images/favicon-192.png" />
+    <link rel="apple-touch-icon" href="images/favicon-512.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/generic.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Neeraj Saini</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"><span class="logo">NS</span></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#about" class="main-nav-link">About</a></li>
+          <li><a href="#projects" class="main-nav-link">Work</a></li>
+          <li><a href="#footer" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <div class="bar bar--green"></div>
+
+          <p class="message">Hi, My name is</p>
+          <h1 class="primary-heading">Neeraj Saini</h1>
+          <p class="hero-description">
+            I’m a software & web developer with a passion for problem-solving and writing clean code. I love having coffee while coding.
+          </p>
+          <a href="#footer" class="btn btn--full">Get In Touch</a>
+        </div>
+
+        <div class="hero-img-box">
+          <img src="images/coding2.svg" class="hero-img" alt="Person coding" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="bar bar--orange"></div>
+        <span class="secondary-heading">About</span>
+        <div class="grid grid--2-cols about-grid">
+          <div class="about-text-box">
+            <p class="about-description">
+              👋 Hello! My name is Neeraj and I'm a self taught developer. I
+              believe in using technology to solve real-world problems. I
+              started off coding programs for the microcontrollers during my
+              bachelors and gradually became more interested in programming.
+            </p>
+            <p class="about-description">
+              These are just some of the technologies & apps I use to build my
+              programs.
+            </p>
+
+            <ul class="skills-list">
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span class="skill-name">JavaScript</span>
+              </li>
+
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span class="skill-name">React</span>
+              </li>
+
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span class="skill-name">Node.js</span>
+              </li>
+
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span>Python</span>
+              </li>
+
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span>Django</span>
+              </li>
+              <li class="skills-attribute">
+                <ion-icon
+                  name="caret-forward-outline"
+                  class="skills-icon"
+                ></ion-icon>
+                <span>Angular</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image-box">
+            <img src="images/me.jpg" class="about-image" alt="me" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="bar bar--green"></div>
+        <span class="secondary-heading">Projects</span>
+
+        <div class="projects-container">
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <img
+                class="project-image"
+                src="Omnifood.png"
+                alt="omni-food image"
+              />
+            </div> -->
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">ProShop</span>
+                <p class="project-description">
+                  E-commerce website with a friendly user experience with
+                  instant visual updates. It provides the user with the catalog
+                  of different product available for purchase in the store.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">
+                  NodeJS, React, Redux, MongoDB, Paypal API
+                </p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/ProShop"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://proshop05.netlify.app/"
+                      class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <img
+                class="project-image"
+                src="Omnifood.png"
+                alt="omni-food image"
+              />
+            </div> -->
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">Quizzy</span>
+                <p class="project-description">
+                  Quizzy is a web Application built using NodeJs and React. The
+                  database used for storing the questions and user scores is
+                  MongoDB.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">React, Redux, MongoDB, HTML, CSS</p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/QuizApplication"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://quizzy07.netlify.app/" class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <img
+                class="project-image"
+                src="Omnifood.png"
+                alt="omni-food image"
+              />
+            </div> -->
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">Memories</span>
+
+                <p class="project-description">
+                  Memories is a MERN stack social media app that allows users to
+                  post interesting events that happened in their lives on
+                  Memories Board.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">
+                  React, Redux, MongoDB, HTML, CSS, Cloudinary API
+                </p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/Memories"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://memories07.netlify.app/"
+                      class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <a href="#">
+                <img
+                  class="project-image"
+                  src="omni.jpg"
+                  alt="omni-food image"
+                />
+              </a>
+            </div> -->
+            <div class="project-text-box">
+              <span class="tertiary-heading">Movie Theatre API</span>
+              <p class="project-description">
+                Complete Movie threatre api covering number of functions like
+                set up rooms, booking ticket, designating show times for movies
+                etc.
+              </p>
+              <p class="technologies">Python, Django, SQLLite</p>
+              <ul class="project-icons">
+                <li>
+                  <a
+                    href="https://github.com/nsaini-05/Movie_Challenge"
+                    class="project-link"
+                    ><ion-icon
+                      name="logo-github"
+                      class="project-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <!-- <a href="https://weatherfinder.onrender.com/" class="project-link"
+                    ><ion-icon
+                      name="open-outline"
+                      class="project-icon"
+                    ></ion-icon
+                  ></a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <img
+                class="project-image"
+                src="Omnifood.png"
+                alt="omni-food image"
+              />
+            </div> -->
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">ToDo Application</span>
+
+                <p class="project-description">
+                  ToDoApp is a simple todolist application where user can
+                  create,update and delete the tasks. This web application is
+                  built using React, Node.js, Express & MongoDB.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">React, Redux, MongoDB</p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/ToDoApp"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://todoapp04.netlify.app/"
+                      class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project">
+            <!-- <div class="project-image-box">
+              <a href="#">
+                <img
+                  class="project-image"
+                  src="omni.jpg"
+                  alt="omni-food image"
+                />
+              </a>
+            </div> -->
+            <div class="project-text-box">
+              <span class="tertiary-heading">Number Guess Game</span>
+              <p class="project-description">
+                Number Guessing Game is an interactive JavaScript game where
+                players must guess a randomly generated number within a
+                specified range.
+              </p>
+              <p class="technologies">HTML, CSS , JavaScript</p>
+              <ul class="project-icons">
+                <li>
+                  <a
+                    href="https://github.com/nsaini-05/Number-Guess-Game"
+                    class="project-link"
+                    ><ion-icon
+                      name="logo-github"
+                      class="project-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://guessyournumbergame.netlify.app"
+                    class="project-link"
+                    ><ion-icon
+                      name="open-outline"
+                      class="project-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="project">
+            <div class="project-image-box">
+              <img class="project-image" src="qwe.png" alt="omni-food image" />
+            </div>
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">Socio</span>
+
+                <p class="project-description">
+                  MERN stack social media application where user can create,
+                  edit, delete and view posts including media. User can also
+                  connect with friends in order to share posts.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">
+                  React, Redux, MongoDB, HTML, CSS, Stripe API
+                </p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/Socio"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="bar bar--orange"></div>
+          <span class="secondary-heading">Get In Touch!</span>
+          <p class="contact-content">
+            Whatever the reason, I can't wait to get in touch! I'll respond as
+            soon as I see your inquiry! Just click the button below, and we will
+            be in contact soon!
+          </p>
+          <ul class="social-media-links">
+            <li>
+              <a href="mailto:saini.neeraj7788@gmail.com" class="footer-link"
+                ><ion-icon name="mail-outline" class="social-icon"></ion-icon
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="https://ca.linkedin.com/in/neerajsaini05?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                class="footer-link"
+                ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nsaini-05"
+                class="footer-link"
+                blank="true"
+                ><ion-icon name="logo-github" class="social-icon"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
