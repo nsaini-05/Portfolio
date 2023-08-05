@@ -225,7 +225,7 @@ Medium: 11px
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 6.4rem;
 }
 
@@ -237,9 +237,10 @@ Medium: 11px
   transition: all 0.4s;
   display: grid;
   column-gap: 1rem;
-  row-gap: 9.6rem;
-  /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: 1fr;
+  /* row-gap: 9.6rem; */
+  grid-template-columns: repeat(2, 1fr); 
+  /* grid-template-columns: 1fr; */
+  
 }
 
 .project-text-box {
@@ -255,15 +256,20 @@ Medium: 11px
 
 .project-image {
   width: 100%;
-  transition: all 0.4s;
-  vertical-align: middle;
-  vertical-align: baseline;
+  transition: filter 0.5s;
+  height: 100%;
+  filter: grayscale(5%);
 }
 
-.project-image:hover {
+.lazy-img {
+  filter: blur(20px);
+}
+
+
+/* .project-image:hover {
   transform: scale(1.09);
   cursor: pointer;
-}
+} */
 
 .project-text-box {
   padding: 3.2rem;

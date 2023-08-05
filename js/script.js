@@ -1,3 +1,7 @@
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0); // Scroll to the top before the page is unloaded (refreshed)
+};
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
@@ -42,7 +46,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
     }
@@ -58,3 +61,52 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(sectionHeroEl);
+
+
+//Lazy Loading
+const allProjectImages = document.querySelectorAll(".project-image")
+const loadImage = (entries, observer) => {
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+      entry.target.classList.remove("lazy-img");
+      observer.unobserve(entry.target);
+  }
+};
+const imgOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-150px",
+};
+const imageObserver = new IntersectionObserver(loadImage, imgOptions);
+allProjectImages.forEach((img) => imageObserver.observe(img));
+
+
+//Revealing Sections
+const allSections = [document.querySelector(".section-hero"),
+document.querySelector(".section-about"),
+document.querySelector(".section-projects"),
+document.querySelector(".footer"),
+]
+allSections.forEach((section) => section.classList.add("section--hidden"));
+
+
+
+
+const loadSection = (entries,observer)=>{
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+    entry.target.classList.remove("section--hidden");
+    observer.unobserve(entry.target);
+}
+}
+
+const sectionRevealerOptions = {
+  root: null,
+  threshold: 0.15,
+};
+
+const sectionObserver = new IntersectionObserver(loadSection, sectionRevealerOptions);
+allSections.forEach((section) => sectionObserver.observe(section));
+
+
+
