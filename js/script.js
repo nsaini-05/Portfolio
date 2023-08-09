@@ -64,21 +64,24 @@ observer.observe(sectionHeroEl);
 
 
 //Lazy Loading
-const allProjectImages = document.querySelectorAll(".project-image")
-const loadImage = (entries, observer) => {
-  const [entry] = entries;
-  if (entry.isIntersecting) {
-      entry.target.classList.remove("lazy-img");
-      observer.unobserve(entry.target);
-  }
-};
-const imgOptions = {
-  root: null,
-  threshold: 0,
-  rootMargin: "-150px",
-};
-const imageObserver = new IntersectionObserver(loadImage, imgOptions);
-allProjectImages.forEach((img) => imageObserver.observe(img));
+// const allProjectImages = document.querySelectorAll(".project-image")
+// const loadImage = (entries, observer) => {
+//   console.log(entries)
+//   const [entry1, entry2] = entries;
+//   if (entry1?.isIntersecting && entry2?.isIntersecting) {
+//       entry1?.target.classList.remove("lazy-img");
+//       entry2?.target.classList.remove("lazy-img");
+//       observer.unobserve(entry1?.target);
+//       observer.unobserve(entry2?.target);
+//   }
+// };
+// const imgOptions = {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: "-150px",
+// };
+// const imageObserver = new IntersectionObserver(loadImage, imgOptions);
+// allProjectImages.forEach((img) => imageObserver.observe(img));
 
 
 //Revealing Sections

@@ -225,8 +225,8 @@ Medium: 11px
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 6.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
 }
 
 .project {
@@ -238,7 +238,7 @@ Medium: 11px
   display: grid;
   column-gap: 1rem;
   /* row-gap: 9.6rem; */
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(1, 1fr); 
   /* grid-template-columns: 1fr; */
   
 }
