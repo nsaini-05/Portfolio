@@ -41,7 +41,7 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#about" class="main-nav-link">About</a></li>
-          <li><a href="#projects" class="main-nav-link">Work</a></li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
           <li><a href="#footer" class="main-nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -60,8 +60,9 @@
           <p class="message">Hi, My name is</p>
           <h1 class="primary-heading">Neeraj Saini</h1>
           <p class="hero-description">
-            I’m a software & web developer with a passion for problem-solving
-            and writing clean code. I love having coffee while coding.
+            I’m a developer who transforms ideas into functional, meaningful
+            applications. Writing clean code, tackling real challenges, and
+            making steady progress is what drives me.
           </p>
           <a href="#footer" class="btn btn--full">Get In Touch</a>
         </div>
@@ -76,17 +77,19 @@
       <div class="container">
         <div class="bar bar--orange"></div>
         <span class="secondary-heading">About</span>
-        <div class="grid grid--2-cols about-grid">
+        <div class="grid grid--1-cols about-grid">
           <div class="about-text-box">
             <p class="about-description">
-              👋 Hello! My name is Neeraj and I'm a self taught developer. I
-              believe in using technology to solve real-world problems. I
-              started off coding programs for the microcontrollers during my
-              bachelors and gradually became more interested in programming.
+              👋 Hello! I’m Neeraj Saini, a self-taught developer passionate
+              about leveraging technology to solve real-world problems. My
+              journey began during my bachelor's degree, where I started
+              programming for microcontrollers. Over time, this sparked a deeper
+              interest in software development, which I've continued to pursue
+              independently.
             </p>
             <p class="about-description">
-              These are just some of the technologies & apps I use to build my
-              programs.
+              I work with a range of technologies and frameworks to build
+              efficient, scalable applications, including :
             </p>
 
             <ul class="skills-list">
@@ -95,7 +98,10 @@
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span class="skill-name">JavaScript</span>
+                <span class="skill-name"
+                  ><span class="skill-category">Programming Languages: </span>
+                  JavaScript, Python, Java (learning), TypeScript, C#, C++
+                </span>
               </li>
 
               <li class="skills-attribute">
@@ -103,7 +109,10 @@
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span class="skill-name">React</span>
+                <span class="skill-name"
+                  ><span class="skill-category">Frontend Development: </span>
+                  Angular, React, HTML5, CSS3, Material UI, PrimeNG, AG-Grid
+                </span>
               </li>
 
               <li class="skills-attribute">
@@ -111,7 +120,10 @@
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span class="skill-name">Node.js</span>
+                <span class="skill-name"
+                  ><span class="skill-category">Backend Development: </span>
+                  Node.js, Express, basic Spring and Django
+                </span>
               </li>
 
               <li class="skills-attribute">
@@ -119,7 +131,10 @@
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span>Python</span>
+                <span class="skill-name"
+                  ><span class="skill-category">Databases: </span>
+                  MySQL, PostgreSQL, MongoDB (basic), Redis (familiarity)
+                </span>
               </li>
 
               <li class="skills-attribute">
@@ -127,21 +142,29 @@
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span>Django</span>
+                <span class="skill-name"
+                  ><span class="skill-category">Geospatial Tools: </span>
+                  ESRI, ArcGIS API for JavaScript, Leaflet Maps
+                </span>
               </li>
               <li class="skills-attribute">
                 <ion-icon
                   name="caret-forward-outline"
                   class="skills-icon"
                 ></ion-icon>
-                <span>Angular</span>
+                <span class="skill-name"
+                  ><span class="skill-category"
+                    >Version Control & DevOps:
+                  </span>
+                  Git, GitHub, Bitbucket, Jenkins (basic usage)
+                </span>
               </li>
             </ul>
           </div>
 
-          <div class="about-image-box">
+          <!-- <div class="about-image-box">
             <img src="images/me.jpg" class="about-image" alt="Neeraj Image" />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -152,7 +175,7 @@
         <span class="secondary-heading">Projects</span>
 
         <div class="projects-container">
-          <div class="project">
+          <div class="project project-primary">
             <img
               src="./images/Project-shots/Routinely.gif"
               class="project-image"
@@ -162,10 +185,9 @@
               <header>
                 <span class="tertiary-heading">Routinely</span>
                 <p class="project-description">
-                  Routinely is a sleek and minimalistic habit tracker built with
-                  React. It helps you build better routines by allowing you to
-                  add, update, delete, and visualize your habits—all through a
-                  user-friendly interface.
+                  A minimal habit tracker built with React and Supabase. Users
+                  can add, edit, delete, and track daily habits with visual
+                  feedback powered by Recharts.
                 </p>
               </header>
               <footer>
@@ -195,7 +217,49 @@
               </footer>
             </div>
           </div>
-          <div class="project">
+          <div class="project project-primary">
+            <img
+              src="./images/Project-shots/quizzy.gif"
+              class="project-image"
+              alt="quizzy project image"
+            />
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">Quizzy</span>
+                <p class="project-description">
+                  Quizzy is a web Application built using NodeJs and React. The
+                  database used for storing the questions and user scores is
+                  MongoDB.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">React, NodeJS, Redux, MongoDB</p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/QuizApplication"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://quizapplication-1imy.onrender.com"
+                      class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project project-primary">
             <img
               src="./images/Project-shots/travel-com.gif"
               class="project-image"
@@ -235,7 +299,49 @@
               </ul>
             </div>
           </div>
-          <div class="project">
+          <div class="project project-primary">
+            <img
+              src="./images/Project-shots/proshop-com.gif"
+              class="project-image"
+              alt="bankist project image"
+            />
+            <div class="project-text-box">
+              <header>
+                <span class="tertiary-heading">Proshop</span>
+                <p class="project-description">
+                  A modern and responsive eCommerce store. Built with the MERN
+                  stack, it features cart, checkout, and admin tools. Browse
+                  products, log in, and shop seamlessly.
+                </p>
+              </header>
+              <footer>
+                <p class="technologies">React, NodeJS, Redux, MongoDB</p>
+                <ul class="project-icons">
+                  <li>
+                    <a
+                      href="https://github.com/nsaini-05/Bankist-Operations"
+                      class="project-link"
+                      ><ion-icon
+                        name="logo-github"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://bankist-operations.vercel.app/"
+                      class="project-link"
+                      ><ion-icon
+                        name="open-outline"
+                        class="project-icon"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+          <div class="project project-primary">
             <img
               src="./images/Project-shots/bank-com.gif"
               class="project-image"
@@ -277,47 +383,7 @@
               </footer>
             </div>
           </div>
-          <div class="project">
-            <img
-              src="./images/Project-shots/quizzy-com.gif"
-              class="project-image"
-              alt="quizzy project image"
-            />
-            <div class="project-text-box">
-              <header>
-                <span class="tertiary-heading">Quizzy</span>
-                <p class="project-description">
-                  Quizzy is a web Application built using NodeJs and React. The
-                  database used for storing the questions and user scores is
-                  MongoDB.
-                </p>
-              </header>
-              <footer>
-                <p class="technologies">React, NodeJS, Redux, MongoDB</p>
-                <ul class="project-icons">
-                  <li>
-                    <a
-                      href="https://github.com/nsaini-05/QuizApplication"
-                      class="project-link"
-                      ><ion-icon
-                        name="logo-github"
-                        class="project-icon"
-                      ></ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://quizzy07.netlify.app/" class="project-link"
-                      ><ion-icon
-                        name="open-outline"
-                        class="project-icon"
-                      ></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-              </footer>
-            </div>
-          </div>
-          <div class="project">
+          <div class="project project-primary">
             <img
               src="./images/Project-shots/todo-preview.gif"
               class="project-image"
@@ -347,7 +413,7 @@
                   </li>
                   <li>
                     <a
-                      href="https://todoapp04.netlify.app/"
+                      href="https://todoapp-7clq.onrender.com/"
                       class="project-link"
                       ><ion-icon
                         name="open-outline"
@@ -359,48 +425,17 @@
               </footer>
             </div>
           </div>
-          <div class="project">
-            <img
-              src="./images/Project-shots/guess-comp.gif"
-              class="project-image"
-              alt="guess game project image"
-            />
-            <div class="project-text-box">
-              <span class="tertiary-heading">Number Guess Game</span>
-              <p class="project-description">
-                Number Guessing Game is an interactive JavaScript game where
-                players must guess a randomly generated number within a
-                specified range.
-              </p>
-              <p class="technologies">HTML, CSS , JavaScript</p>
-              <ul class="project-icons">
-                <li>
-                  <a
-                    href="https://github.com/nsaini-05/Number-Guess-Game"
-                    class="project-link"
-                    ><ion-icon
-                      name="logo-github"
-                      class="project-icon"
-                    ></ion-icon
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://guessyournumbergame.netlify.app"
-                    class="project-link"
-                    ><ion-icon
-                      name="open-outline"
-                      class="project-icon"
-                    ></ion-icon
-                  ></a>
-                </li>
-              </ul>
+        </div>
+        <div class="centered-text">
+          <a href="more-projects.html" class="btn btn--full"
+            ><div class="centered-text">
+              <span>More Projects</span>
+              <ion-icon name="open-outline"></ion-icon>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-
     <footer class="section footer" id="footer">
       <div class="container">
         <div class="footer-flex">

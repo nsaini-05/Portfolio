@@ -83,6 +83,14 @@ Medium: 11px
   font-size: 3rem;
 }
 
+.logo:before {
+  content: "<";
+}
+
+.logo:after {
+  content: ">";
+}
+
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #4bd2b2;
@@ -105,11 +113,12 @@ Medium: 11px
   cursor: pointer;
   font-family: inherit;
   transition: all 0.2s;
+  text-align: center;
 }
 
 .btn--full:link,
 .btn--full:visited {
-  color: #312f4a;
+  color: #163f35;
   background-color: #4bd2b2;
 }
 
@@ -147,9 +156,10 @@ Medium: 11px
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  background-color: #dbf6f0;
-  border-bottom: 2px solid #4bd2b2;
+  box-shadow: 0 0.8rem 2.4rem rgba(75, 210, 178, 0.1);
+  background-color: #e6fbf9;
+  border-bottom: 2px solid #66c9b3;
+  color: #222222; /* header text */
 }
 
 .sticky .section-hero {
@@ -227,6 +237,7 @@ Medium: 11px
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8rem;
+  margin-bottom: 3.2rem;
 }
 
 .project {
@@ -352,9 +363,13 @@ Medium: 11px
   color: #312f4a;
 }
 
+.skill-category {
+  font-weight: 600;
+}
+
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   row-gap: 1.2rem;
 }
 
@@ -414,7 +429,10 @@ Medium: 11px
 }
 
 .centered-text {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .inline-block {
@@ -435,6 +453,16 @@ Medium: 11px
   list-style: none;
   display: flex;
   gap: 2.4rem;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+.more-projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 50%;
 }
 
 *:focus {

@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   /* color: #32343a; */
   color: #312f4a;
   overflow-x: hidden;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   overflow: hidden;
 }
 /*Comman Conatiner*/
@@ -63,12 +63,11 @@ body {
   display: inline-block;
   font-size: 2rem;
   font-weight: 900;
-  color: #ff6f6f;;
+  color: #ff6f6f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
 
 .section {
   border-top: 1px solid #ddd;
